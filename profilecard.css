@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: myfont3; */
+    font-family: myfont2;
+    /* font-family: myfont1; */
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(Fonts/Kumb/static/KumbhSans-Light.ttf)
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(Fonts/Kumb/static/KumbhSans-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: myfont3;
+    src: url(Fonts/morona/Morona.otf)
+}
+
+body {
+    display: flex;
+    /* height: 100vh; */
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-color: #16a1ac;
+    background-image: url(Images/bg-pattern-top.svg);
+    /* background-size: 300px; */
+}
+
+span {
+    color: slategray;
+    padding: 0px 30px;
+    /* font-stretch: 10px; */
+}
+
+.card-top>span {
+    font-family: myfont2;
+    /* font-weight: bolder; */
+}
+
+.card-top {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 4px solid slategray;
+}
+
+#title {
+    padding-top: 10px;
+    /* font-weight: 800; */
+}
+
+#age {
+    font-size: larger;
+    padding: 10px;
+}
+
+#top {
+    position: absolute;
+}
+
+#profile {
+    z-index: 10px;
+    position: relative;
+    /* border: 20px solid white; */
+}
+
+.card-cover {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(Images/bg-pattern-card.svg);
+    width: 350px;
+    height: 100px;
+}
+
+.card-cover>.card-top {
+    box-shadow: 0 4px 10px 0;
+}
+
+.profile-image {
+    margin-top: -35px;
+    position: relative;
+    border-radius: 50px;
+    border: 5px solid whitesmoke;
+    height: 100px;
+    width: 100px;
+}
+
+.card-cover .profile-image {
+    /* padding-top: 30px; */
+    /* height: 10px; */
+    /* width: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    background-position: left top;
+    background-repeat: repeat;
+    text-align: center;
+    align-items: center;
+    height: 250px;
+    width: 300px;
+    /* justify-content: center; */
+    max-width: 300px;
+}
+
+.card-container>div {
+    background-color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    /* padding-bottom: -10px; */
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    width: 250px;
+    height: 150px;
+}
+
+.card-content>div {
+    border-top: 1px solid rgb(203, 209, 215);
+    padding-top: 20px;
+}
+
+.card-content span {
+    font-size: xx-small;
+}
